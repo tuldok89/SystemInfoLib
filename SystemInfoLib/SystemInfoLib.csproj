@@ -41,10 +41,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Windows\Bios.cs" />
-    <Compile Include="Windows\Processor.cs" />
-    <Compile Include="Windows\OS.cs" />
-    <Compile Include="Windows\Ram.cs" />
+    <Compile Include="Windows\Bios\Bios.cs" />
+    <Compile Include="Windows\HardDisk\DiskSpaceFlags.cs" />
+    <Compile Include="Windows\HardDisk\HardDisk.cs" />
+    <Compile Include="Windows\Processor\Processor.cs" />
+    <Compile Include="Windows\OS\OS.cs" />
+    <Compile Include="Windows\ExtensionMethods.cs" />
+    <Compile Include="Windows\Ram\Ram.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Linux\" />

@@ -37,9 +37,13 @@ namespace SystemInfoExample
             Console.WriteLine("    System Directory: " + OS.SystemFolder + Environment.NewLine + Environment.NewLine);
 
             // RAM
-            Console.WriteLine("RAM Related: " + Environment.NewLine);
+            Console.WriteLine("RAM Related:" + Environment.NewLine);
             Console.WriteLine("    Total Physical Memory (in bytes): " + Ram.TotalPhysicalMemory + Environment.NewLine);
             Console.WriteLine("    Total Physical Memory (in megabytes): " + Ram.TotalPhysicalMemory.ToMegaBytes() + Environment.NewLine);
+
+            // Harddisk
+            Console.WriteLine("HardDisk Related:" + Environment.NewLine);
+            Console.WriteLine("Free Disk Space (in total): " + HardDisk.GetFreeSpace(@"C:\", DiskSpaceFlags.TotalNumberOfFreeBytes));
 
             Console.ReadLine();
         }
